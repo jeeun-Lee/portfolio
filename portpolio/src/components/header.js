@@ -1,29 +1,32 @@
 import styles from "./Header.module.css";
-import { Link } from "react-router-dom";
-
+import { useEffect, useState } from "react";
+import { Link, NavLink  } from "react-router-dom";
 function Header(){
+        useEffect(() => {
+        }, [])
+    
     return(
         <div className={styles.header__wrap}>
-            <ul className={styles.header}>
+            <ul className={`${styles.header} nav`}>
                 <li>
-                    <Link to={`/`}>
+                    <NavLink  to={`/`}  className={({isActive}) => (isActive ? "navActive" : "")}>
                         Home
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to={`/skill`}>
+                    <NavLink to={`/skill`}  className={({isActive}) => (isActive ? "navActive" : "")}>
                         Skill
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to={`/project`}>
+                    <NavLink to={`/project`} className={({isActive}) => (isActive ? "navActive" : "")}>
                         Project
-                        </Link>
+                        </NavLink>
                 </li>
                 <li>
-                    <Link to={`/info`}>
+                    <NavLink to={`/info`} className={({isActive}) => (isActive ? "navActive" : "")}>
                         Infomation
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
         </div>

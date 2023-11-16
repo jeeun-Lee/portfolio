@@ -1,19 +1,19 @@
 .en{
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
 }
 .title_wrap{
     position: absolute;
     left: 0;
     top: 0;
+    width: 100%;
 }
 .title{
     font-size: 130px;
     font-weight: 700;
-    
 }
 .title_sub{
   position: relative;
   width: 100%;
-  top: 0;
+  top: -25%;
   left: 145px;
 }

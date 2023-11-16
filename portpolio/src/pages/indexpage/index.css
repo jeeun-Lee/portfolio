@@ -1,0 +1,48 @@
+.title{
+    position: absolute;
+    top: 44px;
+    left: 145px;
+    width: fit-content;
+   
+}
+
+.welcome-wrap{
+    position: relative;
+    margin:0 auto;
+    margin-top: 220px;
+}
+.welcome-wrap h1:first-of-type{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+}
+.welcome-wrap h1 ,.infomation{
+    text-align: center;
+}
+.infomation{
+    margin-top: 110px;
+}
+.navActive{
+    position: relative;
+}
+.navActive::before{
+    content: "";
+    width: 100%;
+    height: 13px;
+    display: block;
+    background: rgba(188, 208, 65, 0.50);
+    position: absolute;
+    left: 0;
+    bottom: -2.5px;
+    animation: width-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes width-left {
+    0% {
+     width: 0;
+    }
+    100% {
+    width: 100%;
+    }
+  }
