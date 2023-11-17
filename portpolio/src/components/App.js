@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-       <div>
+       {/* <div>
           {Pc && <p>HI PC</p>}
           {Tablet && <p>HI Tablet</p>}
           {Mobile && <p>HI Mobile</p>}
@@ -39,7 +39,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-      
+       */}
     </div>
   );
 }
