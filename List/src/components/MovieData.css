@@ -1,0 +1,16 @@
+ul.Movies li{
+    width: calc(25% - 20px) ;
+}
+h6{
+    font-size: 20px;
+}
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+ul.genres li{
+    font-size: 15px;
+    
+}
